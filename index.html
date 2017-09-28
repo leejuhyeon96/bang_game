@@ -2,38 +2,31 @@
 
 <head>
 <script>
-	var left_px=0; //가로 이동 좌표
+	var left_px=0;
 	var top_px=0;
-	var move_d=5; //이동 거리
+	var move_d=5;
 	document.onkeydown=onkey_press;
-
 	function onkey_press(){
 		if(event.keyCode==37){//<-화살표 키 값
 			left_px=left_px-move_d;
-			document.styleSheets[0].rules[0].style.margin-left=left_px+'px';
+			document.styleSheets[0].rules[0].style.marginLeft=left_px+'px';
 		}
 		else if(event.keyCode==38){
 			top_px=top_px-move_d;
-			document.styleSheets[0].rules[0].style.margin-top=top_px+'px';
+			document.styleSheets[0].rules[0].style.marginTop=top_px+'px';
 		}
 		else if(event.keyCode==39){
 			left_px=left_px+move_d;
-			document.styleSheets[0].rules[0].style.margin-left=left_px+'px';
+			document.styleSheets[0].rules[0].style.marginLeft=left_px+'px';
 		}
 		else if(event.keyCode==40){
 			top_px=top_px-move_d;
-			document.styleSheets[0].rules[0].style.margin-top=top_px+'px';
+			document.styleSheets[0].rules[0].style.marginTop=top_px+'px';
 		}
 }	
-
-
-
-
-
-
 </script>
 <body>
-	<img id="img_airp" src="bang.png" class="IMGN1";>
+	<img id="img_airp" src="bang.png" class="IMGM1";>
 </body>
 </head>
 
@@ -45,5 +38,4 @@
 	margin-left:0px;
 	margin-top:0px;
 }
-
 </style>
