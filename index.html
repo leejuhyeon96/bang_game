@@ -10,6 +10,7 @@
 	var left_px=0;
 	var top_px=0;
 	var move_d=50;
+
 	document.onkeydown=onkey_press;
 	function onkey_press(){
 		console.log(event.keyCode);
@@ -44,7 +45,9 @@
 	left:50px;
 	top:400px;
 	margin-left:0px;
-	margin-top:0px;}
+	margin-top:0px;
+	transition: all 0.5s;
+}
 body{margin:0;}
 html{margin:0;}
 	.BG{
